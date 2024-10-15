@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  font-family: sans-serif, serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+form {
+  padding: 20px 30px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 500px;
+  max-width: 100%;
+}
+.form-header {
+  padding: 20px 0;
+  border-bottom: solid 0.7px #ccc;
+  margin-bottom: 30px;
+}
+.form-header h1 {
+  font-size: 25px;
+}
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.url-input {
+  display: flex;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f9f9f9;
+}
+.url-input input {
+  background: transparent;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 10px;
+  font-size: 16px;
+}
+.url-input button {
+  padding: 0 10px;
+  margin: 5px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.drop-area {
+  display: block;
+  min-height: 200px;
+  border: dashed 2px #ccc;
+  border-radius: 20px;
+  margin: 30px 0;
+  padding: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.drop-area:hover {
+  background: #f9f9f9;
+  border-color: #1b5fcc;
+}
+.drop-area #file-input {
+  opacity: 0;
+  position: absolute;
+  top: -9999px;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.instruction {
+  text-align: center;
+}
+.instruction .folder-img {
+  display: block;
+  margin: auto;
+}
+.instruction p {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.instruction .browse-btn {
+  background: #1b5fcc;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 21px;
+  cursor: pointer;
+  display: inline-block;
+}
+.form-bottom {
+  padding: 20px 0;
+}
+.form-bottom p {
+  font-size: 15px;
+  font-weight: 500;
+}
+.form-bottom span {
+  color: #1b5fcc;
+}
+.form-bottom .progress-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.form-bottom .progress-container {
+  flex: 1;
+  height: 10px;
+  background: #f9f9f9;
+  border-radius: 21px;
+  overflow: hidden;
+}
+.form-bottom #progress {
+  width: 0;
+  height: 10px;
+  background: #1b5fcc;
+  transition: width 1s ease;
+  border-radius: 21px;
+}

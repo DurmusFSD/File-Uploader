@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Documents</title>
+    <link rel="shortcut icon" href="./asset/file.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <div class="form-header">
+        <h1>Upload Documents</h1>
+      </div>
+      <div>
+        <h3 class="title">Upload from a URL</h3>
+        <div class="url-input">
+          <input type="text" placeholder="Enter the file link" id="file-url" />
+          <button type="button" id="upload-btn">Upload</button>
+        </div>
+        <label class="drop-area">
+          <input
+            type="file"
+            accept=".doc,.docx,.pdf,.png,.jpg,.jpeg"
+            id="file-input"
+          />
+          <div class="instruction">
+            <img src="./asset/file.png" alt="" width="60" class="folder-img" />
+            <p>Drag and drop here</p>
+            <p>Or</p>
+            <span class="browse-btn">Browse files</span>
+          </div>
+        </label>
+      </div>
+      <div class="form-bottom">
+        <p>Allowed Types: <span>.doc,.docx,.pdf,.png,.jpg,.jpeg</span> only</p>
+        <div class="progress-row">
+          <div class="progress-container">
+            <div id="progress"></div>
+          </div>
+          <p class="progress-value">0%</p>
+        </div>
+      </div>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>

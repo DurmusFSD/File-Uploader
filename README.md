@@ -1,3 +1,3 @@
 # File-Uploader
 
-![](../uploader/gif.gif)
+![](./uploader/gif.gif)
